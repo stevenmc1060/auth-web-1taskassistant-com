@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "route": "/.well-known/*", "allowedRoles": ["anonymous"] }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/.well-known/*"]
+  },
+  "mimeTypes": {
+    ".json": "application/json"
+  }
+}
